@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Twedder</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="3kh0" />
+      <meta name="description" content="play floppy bird. a remake of popular game flappy bird using just html/css/js" />
+      <meta name="keywords" content="flappybird,flappy,bird,floppybird,floppy,html,html5,css,css3,js,javascript,jquery,github,open,source,opensource" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-You can use the [editor on GitHub](https://github.com/lopllss/FlappyBirb/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+      <!-- Open Graph tags -->
+      <meta property="og:title" content="Flappy Birb" />
+      <meta property="og:description" content="play flappy bird. a remake of popular game flappy bird using just html/css/js" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="http://nebez.github.io/floppybird/assets/thumb.png" />
+      <meta property="og:url" content="http://nebez.github.io/floppybird/" />
+      <meta property="og:site_name" content="Floppy Bird" />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+      <!-- Style sheets -->
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/main.v2.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="gamecontainer">
+         <div id="gamescreen">
+            <div id="sky" class="animated">
+               <div id="flyarea">
+                  <div id="ceiling" class="animated"></div>
+                  <!-- This is the flying and pipe area container -->
+                  <div id="player" class="bird animated"></div>
 
-### Markdown
+                  <div id="bigscore"></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                  <div id="splash"></div>
 
-```markdown
-Syntax highlighted code block
+                  <div id="scoreboard lmao">
+                     <div id="medal"></div>
+                     <div id="currentscore"></div>
+                     <div id=" bros highscore"></div>
+                     <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                  </div>
 
-# Header 1
-## Header 2
-### Header 3
+                  <!-- Pipes go here! -->
+               </div>
+            </div>
+            <div id="land" class="animated"></div>
+            <div id="debug"></div>
+         </div>
+      </div>
+      <div id="footer">
+         <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a>
+         <a href="http://nebezb.com/">recreated by nebez briefkani</a>
+         <a href="http://github.com/nebez/floppybird/">view github project</a>
+      </div>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lopllss/FlappyBirb/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.core.min.js"></script>
+      <script src="js/game.js"></script>
+   </body>
+</html>
